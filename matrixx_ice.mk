@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from ice device
 $(call inherit-product, device/realme/ice/device.mk)
 
-# Inherit some common infinity stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some common matrix stuff.
+$(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
 
-PRODUCT_NAME := infinity_ice
+PRODUCT_NAME := matrixx_ice
 PRODUCT_DEVICE := ice
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
@@ -34,8 +34,8 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 TARGET_BOOT_ANIMATION_RES := 1080
 
 
-INFINITY_BUILD_TYPE := UNOFFICIAL
-INFINITY_MAINTAINER := Tejesh
+MATRIXX_BUILD_TYPE := UNOFFICIAL
+MATRIXX_MAINTAINER := Tejesh
 WITH_GAPPS := true
 TARGET_BUILD_GOOGLE_TELEPHONY := true
 USE_MOTO_CALCULATOR := true

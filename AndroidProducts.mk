@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_ice.mk
+    $(LOCAL_DIR)/matrixx_ice.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_ice-user \
-    infinity_ice-userdebug \
-    infinity_ice-eng
+    matrixx_ice-user \
+    matrixx_ice-userdebug \
+    matrixx_ice-eng
