@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from ice device
 $(call inherit-product, device/realme/ice/device.mk)
 
-# Inherit some common matrix stuff.
+# Inherit some common matrixx stuff.
 $(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
 
 PRODUCT_NAME := matrixx_ice
