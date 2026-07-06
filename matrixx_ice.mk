@@ -36,7 +36,13 @@ TARGET_BOOT_ANIMATION_RES := 1080
 MATRIXX_BUILD_TYPE := UNOFFICIAL
 MATRIXX_MAINTAINER := Death_By_VoltageOS_Team
 
+# Flags specific to ice on matrixx
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,144)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+BYPASS_CHARGE_SUPPORTED := true
+USE_REALITY_ENGINE := true
 
+# Overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	BuildDesc=$(call normalize-path-list, "RMX3461-user 13 TP1A.220905.001 R.1119f23-59b8-59b9 release-keys") \
 	DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
