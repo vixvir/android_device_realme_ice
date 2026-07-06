@@ -38,8 +38,10 @@ MATRIXX_MAINTAINER := Death By VoltageOS Team
 
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
-    DeviceProduct=$(PRODUCT_SYSTEM_NAME) \
+	BuildDesc=$(call normalize-path-list, "RMX3461-user 13 TP1A.220905.001 R.1119f23-59b8-59b9 release-keys") \
+	DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
+	DeviceProduct=$(PRODUCT_SYSTEM_NAME) \
+	BuildFingerprint=realme/RMX3461/RE54BFL1:13/TP1A.220905.001/R.1119f23-59b8-59b9:user/release-keys
     SystemDevice=RE54BFL1 \
     SystemName=RE54BFL1
 
