@@ -34,7 +34,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Specify build type and maintaner
 MATRIXX_BUILD_TYPE := UNOFFICIAL
-MATRIXX_MAINTAINER := Death_By_VoltageOS_Team
+MATRIXX_MAINTAINER := vixvir
 
 # Flags specific to ice on matrixx
 $(call soong_config_set,surfaceflinger,frame_rate_category_high,144)
