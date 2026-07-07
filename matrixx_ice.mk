@@ -42,6 +42,11 @@ $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 BYPASS_CHARGE_SUPPORTED := true
 USE_REALITY_ENGINE := true
 
+# Gapps
+WITH_GMS := true
+WITH_EXTRA_GAPPS := false
+WITH_GMS_COMMS_SUITE := true
+
 # Overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	BuildDesc=$(call normalize-path-list, "RMX3461-user 13 TP1A.220905.001 R.1119f23-59b8-59b9 release-keys") \
