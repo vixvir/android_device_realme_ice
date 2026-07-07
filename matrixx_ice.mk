@@ -45,7 +45,7 @@ USE_REALITY_ENGINE := true
 # Gapps
 WITH_GMS := true
 WITH_EXTRA_GAPPS := false
-WITH_GMS_COMMS_SUITE := true
+WITH_GMS_COMMS_SUITE := false
 
 # Overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
