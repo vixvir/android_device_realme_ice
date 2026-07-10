@@ -14,7 +14,7 @@ $(call inherit-product, device/realme/ice/device.mk)
 # Inherit some common matrixx stuff.
 $(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
 
-PRODUCT_NAME := matrixx_ice
+PRODUCT_NAME := clover_ice
 PRODUCT_DEVICE := ice
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
@@ -32,20 +32,11 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 # Default is 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Specify build type and maintaner
-MATRIXX_BUILD_TYPE := UNOFFICIAL
-MATRIXX_MAINTAINER := vixvir
-
-# Flags specific to ice on matrixx
-$(call soong_config_set,surfaceflinger,frame_rate_category_high,144)
-$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
-BYPASS_CHARGE_SUPPORTED := true
-USE_REALITY_ENGINE := true
+# Specify and maintaner
+CLOVER_MAINTAINER := vixvir
 
 # Gapps
-WITH_GMS := true
-WITH_EXTRA_GAPPS := false
-WITH_GMS_COMMS_SUITE := false
+WITH_GMS := false
 
 # Overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
